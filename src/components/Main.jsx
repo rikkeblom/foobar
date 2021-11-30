@@ -1,7 +1,7 @@
 import BeingServed from "./BeingServed";
 import InQueue from "./InQueue";
 import TapStatus from "./TapStatus";
-import ColleaguesSection from "./Colleagues";
+import ColleaguesSection from "./ColleagueSection";
 
 export default function Main() {
   return (

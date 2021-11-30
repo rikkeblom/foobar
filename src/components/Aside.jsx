@@ -1,7 +1,11 @@
+import Notification from "./Notification";
+import Navigation from "./Navigation";
+
 export default function Aside() {
   return (
-    <section>
-      <p>Aside</p>
-    </section>
+    <aside>
+      <Notification></Notification>
+      <Navigation></Navigation>
+    </aside>
   );
 }
