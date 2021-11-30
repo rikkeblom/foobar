@@ -1,0 +1,15 @@
+import BeingServed from "./BeingServed";
+import InQueue from "./InQueue";
+import TapStatus from "./TapStatus";
+import ColleaguesSection from "./Colleagues";
+
+export default function Main() {
+  return (
+    <main>
+      <BeingServed></BeingServed>
+      <InQueue></InQueue>
+      <TapStatus></TapStatus>
+      <ColleaguesSection></ColleaguesSection>
+    </main>
+  );
+}
