@@ -1,7 +1,11 @@
+import SectionHeader from "./SectionHeader";
+import QueueContainer from "./QueueContainer";
+
 export default function InQueue() {
   return (
     <section>
-      <p>In Queue Section</p>
+      <SectionHeader></SectionHeader>
+      <QueueContainer></QueueContainer>
     </section>
   );
 }

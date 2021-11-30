@@ -1,35 +1,7 @@
 @use "sass/base";
+/*To use variables you can say document.$variablename eg. base.header-font-flurish*/
 
 * {
   margin: 0;
   box-sizing: border-box;
-}
-
-.App-header {
-  background-color: base.$color;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  gap: 1rem;
-}
-
-.App-header p {
-  font-family: base.$header-font-serif;
-  text-transform: uppercase;
-}
-
-h1 {
-  font-family: base.$header-font-flurish;
-}
-
-button {
-  margin-top: 4rem;
-  font-size: calc(10px + 2vmin);
-  font-family: base.$copy-font;
-  color: base.$color;
-  padding: 1rem 3rem;
 }

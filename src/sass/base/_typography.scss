@@ -17,3 +17,14 @@
 $header-font-serif: "Playfair Display", serif;
 $header-font-flurish: "Hello Paris Serif", cursive;
 $copy-font: "Abel Regular", sans-serif;
+
+/*This part is probably not correct but I just added it for show*/
+h1 {
+  font-family: $header-font-flurish;
+}
+
+h2,
+h3,
+h4 {
+  font-family: $header-font-serif;
+}
