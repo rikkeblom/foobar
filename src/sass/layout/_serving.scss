@@ -1,0 +1,13 @@
+@use "colors";
+
+.served {
+  background: colors.$red-gradient;
+}
+
+.table_button {
+  background-color: darkgreen;
+  width: 80%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}

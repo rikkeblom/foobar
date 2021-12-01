@@ -3,7 +3,7 @@ import OpenOrdersContainer from "./OpenOrdersContainer";
 
 export default function BeingServed() {
   return (
-    <section>
+    <section className="served">
       <SectionHeader></SectionHeader>
       <OpenOrdersContainer></OpenOrdersContainer>
     </section>

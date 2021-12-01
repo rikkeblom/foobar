@@ -2,14 +2,16 @@
 
 @font-face {
   font-family: "Hello Paris Serif";
-  src: url("fonts/HelloParisSerif.woff2") format("woff2"), url("fonts/HelloParisSerif.woff") format("woff");
+  src: url("fonts/HelloParisSerif.woff2") format("woff2"),
+    url("fonts/HelloParisSerif.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Abel Regular";
-  src: url("fonts/Abel-Regular.woff2") format("woff2"), url("fonts/Abel-Regular.woff") format("woff");
+  src: url("fonts/Abel-Regular.woff2") format("woff2"),
+    url("fonts/Abel-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -17,6 +19,8 @@
 $header-font-serif: "Playfair Display", serif;
 $header-font-flurish: "Hello Paris Serif", cursive;
 $copy-font: "Abel Regular", sans-serif;
+
+//@use "colors";
 
 /*This part is probably not correct but I just added it for show*/
 h1 {
@@ -27,4 +31,13 @@ h2,
 h3,
 h4 {
   font-family: $header-font-serif;
+  color: #f0e5c6;
+  //color: colors.$white;
+  text-transform: uppercase;
+}
+
+p,
+span {
+  font-family: $copy-font;
+  color: #f0e5c6;
 }

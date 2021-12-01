@@ -4,7 +4,7 @@ import BeersForOpenOrders from "./BeersForOpenOrders";
 export default function OpenOrder() {
   return (
     <article>
-      <button>
+      <button className="table_button">
         <h3>Table #</h3>
         <span>Icon goes here</span>
       </button>
