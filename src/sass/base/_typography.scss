@@ -1,3 +1,5 @@
+@use "colors";
+
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 @font-face {
@@ -20,8 +22,6 @@ $header-font-serif: "Playfair Display", serif;
 $header-font-flurish: "Hello Paris Serif", cursive;
 $copy-font: "Abel Regular", sans-serif;
 
-//@use "colors";
-
 /*This part is probably not correct but I just added it for show*/
 h1 {
   font-family: $header-font-flurish;
@@ -31,13 +31,17 @@ h2,
 h3,
 h4 {
   font-family: $header-font-serif;
-  color: #f0e5c6;
-  //color: colors.$white;
+  color: colors.$cream;
   text-transform: uppercase;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 1.5rem;
 }
 
 p,
 span {
   font-family: $copy-font;
-  color: #f0e5c6;
+  color: colors.$cream;
 }

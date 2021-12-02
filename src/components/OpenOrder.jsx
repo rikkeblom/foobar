@@ -3,13 +3,13 @@ import BeersForOpenOrders from "./BeersForOpenOrders";
 
 export default function OpenOrder() {
   return (
-    <article>
+    <article className="served_article">
       <button className="table_button">
         <h3>Table #</h3>
-        <span>Icon goes here</span>
+        <span>V</span>
       </button>
       <section>
-        <p>Name of Server</p>
+        <p className="server_name">Name of Server</p>
         <BeersForOpenOrders></BeersForOpenOrders>
       </section>
     </article>

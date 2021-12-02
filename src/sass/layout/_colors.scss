@@ -1,8 +1,18 @@
-$color: hsl(149, 25%, 37%);
+$cream: #f0e5c6;
+$red: #801b16;
+$light-cream: #fef8e9;
+$green: #466433;
 
 $red-gradient: radial-gradient(
   circle,
   rgba(158, 30, 30, 1) 0%,
+  rgba(41, 20, 0, 1) 85%,
+  rgba(0, 0, 0, 1) 100%
+);
+
+$green-gradient: radial-gradient(
+  circle,
+  rgba(70, 100, 51, 1) 0%,
   rgba(41, 20, 0, 1) 85%,
   rgba(0, 0, 0, 1) 100%
 );

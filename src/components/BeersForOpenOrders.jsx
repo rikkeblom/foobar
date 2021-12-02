@@ -1,18 +1,18 @@
 export default function BeersForOpenOrders() {
   return (
-    <article>
-      <img src="#" alt="BeerLabelGoesHere" />
+    <article className="lable_article">
+      <img src="#" alt="BeerLabel" />
       <div>
         <h4>Beers Name</h4>
-        <div>
-          <div>dots</div>
+        <div className="line_it_up">
           <p>Amount</p>
-          <p>Number</p>
+          <div className="line1"></div>
+          <p>X#</p>
         </div>
-        <div>
-          <div>dots</div>
-          <p>Amount</p>
-          <p>Number</p>
+        <div className="line_it_up">
+          <p>Tap</p>
+          <div className="line2"></div>
+          <p>#</p>
         </div>
       </div>
     </article>
