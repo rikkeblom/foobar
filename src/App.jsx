@@ -27,7 +27,7 @@ function App() {
   //Here is where the "HTML" begins
   return (
     <div className="App">
-      <Header></Header>
+      <Header closingTime={fetchedData.bar.closingTime}></Header>
       <Main data={fetchedData}></Main>
       <Aside></Aside>
     </div>
