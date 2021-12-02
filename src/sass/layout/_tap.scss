@@ -1,0 +1,48 @@
+@use "colors";
+
+.tap {
+  background: colors.$green-gradient;
+  padding-top: 2rem;
+}
+
+.tap h2 {
+  text-align: center;
+}
+
+.tap_article {
+  padding: 1rem;
+}
+
+.tap_visuals {
+  display: flex;
+}
+
+.tap_article figure {
+  height: 4rem;
+  width: 4rem;
+}
+
+.tap_article img {
+  border: 1px solid colors.$cream;
+  margin-right: 0.8rem;
+  height: 6rem;
+  width: 4rem;
+}
+
+.tap_article .line_it_up p {
+  border-bottom: 1px solid colors.$cream;
+  width: 2rem;
+}
+
+.tap_amount,
+.keg_amount {
+  text-align: end;
+}
+
+.tap_bar {
+  width: 1rem;
+  height: 6rem;
+  background-color: white;
+  border: 1px solid colors.$cream;
+  border-radius: 1rem;
+}

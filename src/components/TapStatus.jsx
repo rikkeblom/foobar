@@ -2,12 +2,12 @@ import Tap from "./Tap";
 
 export default function TapStatus() {
   return (
-    <section>
+    <section className="tap">
       <h2>Tap Status</h2>
-      <section>
+      <section className="on_tap"> 
         <Tap></Tap>
       </section>
-      <section>
+      <section className="off_tap">
         <Tap></Tap>
       </section>
     </section>

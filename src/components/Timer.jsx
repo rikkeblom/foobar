@@ -1,7 +1,7 @@
 export default function Timer() {
   return (
     <div>
-      <p>Timer goes here</p>
+      <p>Timer</p>
     </div>
   );
 }
