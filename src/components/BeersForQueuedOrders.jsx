@@ -1,16 +1,16 @@
 export default function BeersForQueuedOrders() {
   return (
-    <article>
-      <div>
-        <img src="#" alt="BeerLabelGoesHere" />
+    <article className="beer_queue_article">
+      <div className="queue_beer">
+        <img src="#" alt="Beer" />
         <div>
           <h4>Beer Name</h4>
           <p>x#</p>
         </div>
       </div>
-      <div>
-        <img src="#" alt="TapIconGoesHere" />
-        <p>Tap Number</p>
+      <div className="queue_tap">
+        <img src="#" alt="Tap" />
+        <p>#</p>
       </div>
     </article>
   );

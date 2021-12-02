@@ -1,8 +1,8 @@
 export default function SectionHeader() {
   return (
-    <div className="serving_titel">
+    <div className="section_header">
       <span>0</span>
-      <h2>Being Served</h2>
+      <h2>Section Titel</h2>
     </div>
   );
 }

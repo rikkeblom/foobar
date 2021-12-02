@@ -3,7 +3,7 @@ import QueueContainer from "./QueueContainer";
 
 export default function InQueue() {
   return (
-    <section>
+    <section className="queue">
       <SectionHeader></SectionHeader>
       <QueueContainer></QueueContainer>
     </section>

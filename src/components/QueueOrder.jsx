@@ -2,11 +2,11 @@ import BeersForQueuedOrders from "./BeersForQueuedOrders";
 
 export default function QueueOrder() {
   return (
-    <article>
-      <div>
+    <article className="queue_article">
+      <div className="queue_table">
         <button>Open Order</button>
         <h3>Table #</h3>
-        <span>Timer Goes Here</span>
+        <span>Timer</span>
       </div>
       <section>
         <BeersForQueuedOrders></BeersForQueuedOrders>

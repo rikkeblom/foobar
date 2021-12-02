@@ -6,20 +6,6 @@
   padding-bottom: 5rem;
 }
 
-.serving_titel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-}
-
-.serving_titel span {
-  border: 1px solid colors.$cream;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  padding: 0.5rem;
-  margin: 0.5rem;
-}
-
 .served_article {
   display: grid;
   justify-items: center;
