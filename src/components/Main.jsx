@@ -6,7 +6,7 @@ import ColleaguesSection from "./ColleagueSection";
 export default function Main(props) {
   return (
     <main>
-      <BeingServed></BeingServed>
+      <BeingServed bartenders={props.data.bartenders} serving={props.data.serving} taps={props.data.taps}></BeingServed>
       <InQueue></InQueue>
       <TapStatus></TapStatus>
       <ColleaguesSection></ColleaguesSection>
