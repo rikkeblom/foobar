@@ -6,37 +6,37 @@ export default function FilterAndSearchColleagues() {
     <section>
       <input type="search" />
       <div>
-        <label for="workingtoday">
+        <label htmlFor="workingtoday">
           <input type="checkbox" id="workingtoday" name="workingtoday"></input>
           Working Today
         </label>
-        <label for="dayoff">
+        <label htmlFor="dayoff">
           <input type="checkbox" id="dayoff" name="dayoff"></input>
           Day Off
         </label>
-        <label for="az">
+        <label htmlFor="az">
           <input type="checkbox" id="az" name="az"></input>
           A-Z
         </label>
       </div>
       <div>
-        <label for="waitingtables">
+        <label htmlFor="waitingtables">
           <input type="checkbox" id="waitingtables" name="waitingtables"></input>
           Waiting Tables
         </label>
-        <label for="onbreak">
+        <label htmlFor="onbreak">
           <input type="checkbox" id="onbreak" name="onbreak"></input>
           On Break
         </label>
-        <label for="doinginventory">
+        <label htmlFor="doinginventory">
           <input type="checkbox" id="doinginventory" name="doinginventory"></input>
           Doing Inventory
         </label>
-        <label for="cleaning">
+        <label htmlFor="cleaning">
           <input type="checkbox" id="cleaning" name="cleaning"></input>
           Cleaning
         </label>
-        <label for="manager">
+        <label htmlFor="manager">
           <input type="checkbox" id="manager" name="manager"></input>
           Manager
         </label>
