@@ -3,41 +3,41 @@
 
 export default function FilterAndSearchColleagues() {
   return (
-    <section>
+    <section className="filter_section">
       <input type="search" />
-      <div>
+      <div className="filter1">
         <label for="workingtoday">
-          <input type="checkbox" id="workingtoday" name="workingtoday"></input>
+          {/* <input type="checkbox" id="workingtoday" name="workingtoday"></input> */}
           Working Today
         </label>
         <label for="dayoff">
-          <input type="checkbox" id="dayoff" name="dayoff"></input>
+          {/* <input type="checkbox" id="dayoff" name="dayoff"></input> */}
           Day Off
         </label>
         <label for="az">
-          <input type="checkbox" id="az" name="az"></input>
+          {/* <input type="checkbox" id="az" name="az"></input> */}
           A-Z
         </label>
       </div>
-      <div>
-        <label for="waitingtables">
-          <input type="checkbox" id="waitingtables" name="waitingtables"></input>
-          Waiting Tables
+      <div className="filter2">
+        <label for="waitingtables" className="lavender">
+          {/* <input type="checkbox" id="waitingtables" name="waitingtables"></input> */}
+          Waiting
         </label>
-        <label for="onbreak">
-          <input type="checkbox" id="onbreak" name="onbreak"></input>
+        <label for="onbreak" className="olive">
+          {/* <input type="checkbox" id="onbreak" name="onbreak"></input> */}
           On Break
         </label>
-        <label for="doinginventory">
-          <input type="checkbox" id="doinginventory" name="doinginventory"></input>
-          Doing Inventory
+        <label for="doinginventory" className="sky">
+          {/* <input type="checkbox" id="doinginventory" name="doinginventory"></input> */}
+          Inventory
         </label>
-        <label for="cleaning">
-          <input type="checkbox" id="cleaning" name="cleaning"></input>
+        <label for="cleaning" className="mango">
+          {/* <input type="checkbox" id="cleaning" name="cleaning"></input> */}
           Cleaning
         </label>
-        <label for="manager">
-          <input type="checkbox" id="manager" name="manager"></input>
+        <label for="manager" className="white">
+          {/* <input type="checkbox" id="manager" name="manager"></input> */}
           Manager
         </label>
       </div>

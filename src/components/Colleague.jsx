@@ -5,9 +5,9 @@ export default function Colleague() {
       <div>
         <h3>Employee Name</h3>
         <p>Shift time goes here</p>
-        <span>Timer goes here</span>
         <p>Current Task</p>
       </div>
+      <span>Timer goes here</span>
     </article>
   );
 }

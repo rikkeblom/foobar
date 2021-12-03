@@ -1,0 +1,83 @@
+@use "colors";
+.colleagues {
+  background-color: colors.$cream;
+  padding-top: 2rem;
+}
+
+.colleagues h2 {
+  color: colors.$red;
+  text-align: center;
+}
+
+.colleagues p {
+  color: colors.$red;
+}
+
+.colleagues h4 {
+  color: colors.$red;
+}
+
+.colleagues h3 {
+  color: colors.$red;
+}
+
+.colleagues span {
+  color: colors.$red;
+  border-color: colors.$red;
+}
+
+.colleagues input {
+  border: 1px solid colors.$red;
+  //margin: 1rem;
+}
+
+.filter_section {
+  display: grid;
+  justify-items: center;
+  grid-gap: 0.5rem;
+}
+
+.filter1 label {
+  font-size: 0.8rem;
+  padding: 0.5rem;
+}
+
+.filter2 label {
+  font-size: 0.8rem;
+  border: 1px solid colors.$red;
+  margin: 0.2rem;
+  padding: 0.2rem;
+}
+
+.filter2 {
+  display: flex;
+  //grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+}
+
+.lavender {
+  background-color: colors.$lavender;
+}
+
+.olive {
+  background-color: colors.$olive;
+}
+
+.sky {
+  background-color: colors.$sky;
+}
+
+.mango {
+  background-color: colors.$mango;
+}
+
+.white {
+  background-color: colors.$white;
+}
+
+.col article {
+  border: 1px solid colors.$red;
+  background-color: colors.$lavender;
+  margin: 1rem;
+  padding: 1rem;
+}

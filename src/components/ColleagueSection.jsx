@@ -3,10 +3,10 @@ import Colleague from "./colleague";
 
 export default function ColleaguesSection() {
   return (
-    <section>
+    <section className="colleagues">
       <h2>Colleagues</h2>
       <FilterAndSearchColleagues></FilterAndSearchColleagues>
-      <section>
+      <section className="col">
         <Colleague></Colleague>
       </section>
     </section>

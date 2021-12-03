@@ -52,3 +52,8 @@ figcaption {
   font-family: $copy-font;
   font-size: 0.8rem;
 }
+
+label {
+  font-family: $copy-font;
+  color: colors.$red;
+}
