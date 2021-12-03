@@ -1,6 +1,6 @@
 import Tap from "./Tap";
 
-export default function TapStatus() {
+export default function TapStatus(props) {
   return (
     <section>
       <h2>Tap Status</h2>
