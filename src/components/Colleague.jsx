@@ -1,13 +1,13 @@
 export default function Colleague() {
   return (
     <article>
-      <img src="#" alt="InsertEmployeeImageHere" />
+      <img src="#" alt="Employee" />
       <div>
-        <h3>Employee Name</h3>
-        <p>Shift time goes here</p>
+        <h4>Employee Name</h4>
+        <p>Shift: 00:00</p>
         <p>Current Task</p>
       </div>
-      <span>Timer goes here</span>
+      <span>Timer</span>
     </article>
   );
 }

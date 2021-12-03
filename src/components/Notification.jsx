@@ -1,7 +1,7 @@
 export default function Notification() {
   return (
-    <section>
-      <p>Alarm icons go here</p>
+    <section className="alarm">
+      <p>Alarm</p>
     </section>
   );
 }

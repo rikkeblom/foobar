@@ -1,0 +1,37 @@
+@use "colors";
+
+aside {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  justify-content: center;
+  background-color: colors.$light-cream;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  position: fixed;
+  //height: 2rem;
+  width: 320px;
+  bottom: 0rem;
+}
+
+aside > * {
+  margin: 0.5rem;
+}
+
+aside ul {
+  display: flex;
+  justify-content: center;
+}
+
+aside li {
+  list-style: none;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+aside ul:first-child {
+  padding-left: 0;
+}
+
+aside .alarm {
+  display: flex;
+  justify-content: center;
+}

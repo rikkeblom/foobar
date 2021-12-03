@@ -1,7 +1,7 @@
 @use "colors";
 
 .queue {
-  background-color: colors.$cream;
+  background-color: colors.$light-cream;
 }
 
 .queue h2 {
@@ -70,6 +70,7 @@
 
 .beer_queue_article img {
   border: 1px solid colors.$red;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   margin-right: 0.8rem;
   height: 3rem;
   width: 3rem;
