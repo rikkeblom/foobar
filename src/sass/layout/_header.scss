@@ -1,17 +1,21 @@
 @use "colors";
 
+header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  justify-items: center;
+  margin-bottom: -5rem;
+  margin-top: 1rem;
+}
+
 header h1 {
   color: colors.$cream;
-  position: fixed;
-  margin-left: 5.2rem;
-  top: 1rem;
   background-image: colors.$green-gradient;
   padding: 0.8rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   border: 1px solid colors.$cream;
+  width: 11rem;
   z-index: 100;
-}
-
-header p {
-  position: fixed;
+  text-align: center;
+  padding-bottom: 0.3rem;
 }

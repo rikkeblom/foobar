@@ -20,12 +20,12 @@
 //   grid-row: 1;
 // }
 
-body {
-  display: grid;
-  grid-template-columns: 1fr 350px 1fr;
-}
+// body {
+//   display: grid;
+//   grid-template-columns: 1fr 350px 1fr;
+// }
 
-body > * {
-  grid-column: 2;
-  padding: 1rem;
-}
+// body > * {
+//   grid-column: 2;
+//   padding: 1rem;
+// }

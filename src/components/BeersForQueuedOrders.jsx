@@ -9,7 +9,7 @@ export default function BeersForQueuedOrders() {
         </div>
       </div>
       <div className="queue_tap">
-        <img src="#" alt="Tap" />
+        <img src="src/img/icons/red_tap.png" alt="Tap" />
         <p>#</p>
       </div>
     </article>

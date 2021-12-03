@@ -1,7 +1,7 @@
 export default function Notification() {
   return (
     <section className="alarm">
-      <p>Alarm</p>
+      <img src="src/img/icons/bell_icon.svg" alt="" />
     </section>
   );
 }
