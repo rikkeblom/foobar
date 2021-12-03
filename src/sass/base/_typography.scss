@@ -44,4 +44,11 @@ p,
 span {
   font-family: $copy-font;
   color: colors.$cream;
+  font-size: 1rem;
+}
+
+figcaption {
+  color: colors.$cream;
+  font-family: $copy-font;
+  font-size: 0.8rem;
 }
