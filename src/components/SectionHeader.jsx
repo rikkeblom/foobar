@@ -1,8 +1,8 @@
-export default function SectionHeader() {
+export default function SectionHeader(props) {
   return (
     <div>
-      <span>Number of Open Tickets</span>
-      <h2>Section Title</h2>
+      <span>{props.servingLength}</span>
+      <h2>{props.sectionTitle}</h2>
     </div>
   );
 }
