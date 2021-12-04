@@ -8,7 +8,7 @@ export default function Main(props) {
     <main>
       <BeingServed beers={props.beers} bartenders={props.data.bartenders} serving={props.data.serving} taps={props.data.taps}></BeingServed>
       <InQueue beers={props.beers} queue={props.data.queue} taps={props.data.taps}></InQueue>
-      <TapStatus beers={props.beers} taps={props.data.taps}></TapStatus>
+      <TapStatus beers={props.beers} taps={props.data.taps} storage={props.data.storage}></TapStatus>
       <ColleaguesSection bartenders={props.data.bartenders}></ColleaguesSection>
     </main>
   );
