@@ -30,7 +30,7 @@ export default function OpenOrder(props) {
     } else {
       beerArray = beerArray.concat({ beer: beername, amount: 1 });
     }
-    console.log(beerArray);
+    // console.log(beerArray);
   }
   //Now we can use the map on the new array and send the beername + amount to the next component
   const mapped = beerArray.map((beer) => <BeersForOpenOrders beer={beer} taps={props.taps} />);

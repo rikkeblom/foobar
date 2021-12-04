@@ -10,7 +10,7 @@ async function fetchDataBeers() {
   const resBeer = await fetch("https://foobar-databar.herokuapp.com/beertypes");
   const dataBeer = await resBeer.json();
   beerData = dataBeer;
-  console.log(beerData);
+  // console.log(beerData);
 }
 fetchDataBeers();
 
@@ -22,7 +22,7 @@ function App() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      console.log("This will run every second second!");
+      // console.log("This will run every second second!");
       fetchDataBar();
     }, 2000);
     return () => clearInterval(interval);
