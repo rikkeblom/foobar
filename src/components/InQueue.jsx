@@ -5,7 +5,7 @@ import QueueContainer from "./QueueContainer";
 
 export default function InQueue(props) {
   return (
-    <section>
+    <section className="queue">
       <SectionHeader servingLength={props.queue.length} sectionTitle="In Queue"></SectionHeader>
       <QueueContainer {...props}></QueueContainer>
     </section>

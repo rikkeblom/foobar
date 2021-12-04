@@ -18,11 +18,11 @@ export default function QueueOrder(props) {
   const mapped = beerArray.map((beer) => <BeersForQueuedOrders beer={beer} taps={props.taps} />);
 
   return (
-    <article className="queueOrder">
-      <div>
+    <article className="queue_article">
+      <div className="queue_table">
         <button>Open Order</button>
         <h3>Table #</h3>
-        <span>Timer Goes Here</span>
+        <span>Timer</span>
       </div>
       <section>{mapped}</section>
     </article>

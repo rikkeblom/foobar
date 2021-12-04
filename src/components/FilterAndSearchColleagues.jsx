@@ -3,9 +3,9 @@
 
 export default function FilterAndSearchColleagues() {
   return (
-    <section>
+    <section className="filter_section">
       <input type="search" />
-      <div>
+      <div className="filter1">
         <label htmlFor="workingtoday">
           <input type="checkbox" id="workingtoday" name="workingtoday"></input>
           Working Today
@@ -19,24 +19,24 @@ export default function FilterAndSearchColleagues() {
           A-Z
         </label>
       </div>
-      <div>
-        <label htmlFor="waitingtables">
+      <div className="filter2">
+        <label htmlFor="waitingtables" className="lavender">
           <input type="checkbox" id="waitingtables" name="waitingtables"></input>
-          Waiting Tables
+          Waiting
         </label>
-        <label htmlFor="onbreak">
+        <label htmlFor="onbreak" className="olive">
           <input type="checkbox" id="onbreak" name="onbreak"></input>
           On Break
         </label>
-        <label htmlFor="doinginventory">
+        <label htmlFor="doinginventory" className="sky">
           <input type="checkbox" id="doinginventory" name="doinginventory"></input>
-          Doing Inventory
+          Inventory
         </label>
-        <label htmlFor="cleaning">
+        <label htmlFor="cleaning" className="mango">
           <input type="checkbox" id="cleaning" name="cleaning"></input>
           Cleaning
         </label>
-        <label htmlFor="manager">
+        <label htmlFor="manager" className="white">
           <input type="checkbox" id="manager" name="manager"></input>
           Manager
         </label>

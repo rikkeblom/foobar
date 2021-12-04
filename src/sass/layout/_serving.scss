@@ -1,0 +1,66 @@
+@use "colors";
+
+.served {
+  background: colors.$red-gradient;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+.served_article {
+  display: grid;
+  justify-items: center;
+}
+
+.table_button {
+  background-image: colors.$green-gradient;
+  width: 18rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid colors.$cream;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 0.2rem;
+}
+
+.table_button h3 {
+  margin: auto;
+  padding-left: 1rem;
+}
+
+.table_button span {
+  color: rgb(0, 255, 0);
+  padding-right: 1rem;
+  font-weight: 600;
+}
+
+.server_name {
+  text-align: center;
+  padding: 1rem;
+  padding-top: 0.5rem;
+}
+
+.lable_article {
+  display: flex;
+}
+
+.lable_article img {
+  border: 1px solid colors.$cream;
+  margin-right: 0.8rem;
+  height: 4rem;
+  width: 4rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.line_it_up {
+  display: flex;
+}
+
+.line1 {
+  border-bottom: 1px solid colors.$cream;
+  width: 5rem;
+}
+
+.line2 {
+  border-bottom: 1px solid colors.$cream;
+  width: 7rem;
+}

@@ -4,7 +4,7 @@ export default function Header(props) {
   return (
     <header>
       <Timer></Timer>
-      <h1>Foobar</h1>
+      <h1>FooBar</h1>
     </header>
   );
 }

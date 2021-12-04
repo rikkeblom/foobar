@@ -1,0 +1,83 @@
+@use "colors";
+
+.queue {
+  background-color: colors.$light-cream;
+  padding: 3rem;
+}
+
+.queue h2 {
+  color: colors.$red;
+}
+
+.queue p {
+  color: colors.$red;
+}
+
+.queue h4 {
+  color: colors.$red;
+}
+
+.queue span {
+  color: colors.$red;
+  border-color: colors.$red;
+}
+
+.queue_article {
+  display: grid;
+  justify-items: center;
+}
+
+.queue_table {
+  background-image: colors.$green-gradient;
+  width: 18rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid colors.$cream;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 0.2rem;
+}
+
+.queue_table > * {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.queue_table button {
+  color: colors.$cream;
+  background-color: rgba(0, 128, 0, 0);
+  border: 1px solid colors.$cream;
+}
+
+.beer_queue_article {
+  //display: flex;
+  width: 18rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border: 1px solid colors.$red;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 0.3rem;
+}
+
+.beer_queue_article > * {
+  display: flex;
+  align-items: center;
+}
+
+.queue_tap {
+  // align-self: end;
+  justify-content: right;
+}
+
+.beer_queue_article img {
+  //border: 1px solid colors.$red;
+  //box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin-right: 0.8rem;
+  height: 3rem;
+  width: 3rem;
+}
+
+.queue_beer img {
+  border: 1px solid colors.$red;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}

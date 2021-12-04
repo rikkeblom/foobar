@@ -36,13 +36,13 @@ export default function OpenOrder(props) {
   const mapped = beerArray.map((beer) => <BeersForOpenOrders beer={beer} taps={props.taps} />);
 
   return (
-    <article className="openOrder">
-      <button>
+    <article className="served_article">
+      <button className="table_button">
         <h3>Table #</h3>
-        <span>Icon goes here</span>
+        <span>V</span>
       </button>
       <section>
-        <p>{server.name}</p>
+        <p className="server_name">{server.name}</p>
         {mapped}
       </section>
     </article>

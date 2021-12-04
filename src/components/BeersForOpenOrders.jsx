@@ -13,18 +13,18 @@ export default function BeersForOpenOrders(props) {
   let tapNumber = tap.id + 1;
 
   return (
-    <article>
-      <img src="#" alt="BeerLabelGoesHere" />
+    <article className="lable_article">
+      <img src="#" alt="BeerLabel" />
       <div>
         <h4>{props.beer.beer}</h4>
-        <div>
-          <div>dots</div>
+        <div className="line_it_up">
           <p>Amount</p>
+          <div className="line1"></div>
           <p>{props.beer.amount}</p>
         </div>
-        <div>
-          <div>dots</div>
+        <div className="line_it_up">
           <p>Tap</p>
+          <div className="line2"></div>
           <p>{tapNumber}</p>
         </div>
       </div>

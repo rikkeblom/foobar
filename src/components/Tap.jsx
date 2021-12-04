@@ -2,25 +2,25 @@
 
 export default function Tap() {
   return (
-    <article>
+    <article className="tap_article">
       <h3>Tap #</h3>
-      <div>
+      <div className="tap_visuals">
         <figure>
-          <img src="#" alt="BeerLabelGoesHere" />
+          <img src="#" alt="Beer" />
           <figcaption>Beer Name</figcaption>
         </figure>
-        <div>The thing showing how much is left in the current keg goes here.</div>
+        <div className="tap_bar">
+          <div className="tap_bar_status"></div>
+        </div>
       </div>
       <div>
-        <div>
-          <div>dots</div>
-          <p>Amount</p>
-          <p>Number</p>
+        <div className="line_it_up">
+          <p>Tap</p>
+          <p className="tap_amount">#L</p>
         </div>
-        <div>
-          <div>dots</div>
-          <p>Amount</p>
-          <p>Number</p>
+        <div className="line_it_up">
+          <p>Kegs</p>
+          <p className="keg_amount">#</p>
         </div>
       </div>
     </article>
