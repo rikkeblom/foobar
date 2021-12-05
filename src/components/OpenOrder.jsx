@@ -36,7 +36,7 @@ export default function OpenOrder(props) {
       // console.log(beerArray);
     }
     //Now we can use the map on the new array and send the beername + amount to the next component
-    const mapped = beerArray.map((beer) => <BeersForOpenOrders beer={beer} taps={props.taps} />);
+    const mapped = beerArray.map((beer) => <BeersForOpenOrders beer={beer} taps={props.taps} key={beer.beer} />);
 
     return (
       <article className="served_article">

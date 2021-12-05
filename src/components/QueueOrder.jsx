@@ -15,7 +15,7 @@ export default function QueueOrder(props) {
     // console.log(beerArray);
   }
   //Now we can use the map on the new array and send the beername + amount to the next component
-  const mapped = beerArray.map((beer) => <BeersForQueuedOrders beer={beer} taps={props.taps} />);
+  const mapped = beerArray.map((beer) => <BeersForQueuedOrders beer={beer} taps={props.taps} key={beer.beer} />);
 
   return (
     <article className="queue_article">
