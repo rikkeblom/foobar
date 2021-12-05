@@ -1,4 +1,5 @@
 import BeersForQueuedOrders from "./BeersForQueuedOrders";
+import { tableNumberObject } from "./tableNumberObject";
 
 //props receives beers, taps, id, order and startTime
 export default function QueueOrder(props) {

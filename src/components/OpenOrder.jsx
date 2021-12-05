@@ -1,4 +1,5 @@
 import BeersForOpenOrders from "./BeersForOpenOrders";
+import { tableNumberObject, globalOrderArray } from "./tableNumberObject";
 
 //props gets bartenders, beers and taps
 export default function OpenOrder(props) {
@@ -37,6 +38,17 @@ export default function OpenOrder(props) {
     }
     //Now we can use the map on the new array and send the beername + amount to the next component
     const mapped = beerArray.map((beer) => <BeersForOpenOrders beer={beer} taps={props.taps} key={beer.beer} />);
+
+    //Check if this order has already been added to our static order array
+    globalOrderArray.forEach(checkGlobalOrdersForLocalOrder);
+    function checkGlobalOrdersForLocalOrder(globalOrder) {
+      if (globalOrder.id === props.id) {
+        console.log(globalOrder.id);
+      } else {
+        globalOrderArray.concat({ id: props.id, tablenumber: Math.round(Math.random() * 20) });
+        // console.table(globalOrderArray);
+      }
+    }
 
     return (
       <article className="served_article">
