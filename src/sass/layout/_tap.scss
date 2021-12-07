@@ -28,8 +28,8 @@
   border: 1px solid colors.$cream;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   margin-right: 0.8rem;
-  height: 6rem;
-  width: 4rem;
+  height: 3rem;
+  width: 3rem;
 }
 
 .tap_article .line_it_up p {
@@ -56,12 +56,7 @@
   width: 0.9rem;
   height: 5.9rem;
   background-color: rgb(255, 251, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(255, 0, 0, 1) 0%,
-    rgba(241, 255, 0, 1) 50%,
-    rgba(60, 253, 45, 1) 100%
-  );
+  background: linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgba(241, 255, 0, 1) 50%, rgba(60, 253, 45, 1) 100%);
   border: 1px solid colors.$cream;
   border-radius: 1rem;
   position: absolute;

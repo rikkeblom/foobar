@@ -12,6 +12,7 @@ export default function Tap(props) {
     let kegs;
     let percentage;
     let figcaptionText;
+    let beerNameWithoutSpaces;
 
     //With this next if statement we the beer we are printing is on tap or not because the data we recieve in props is different based on that
     if (props.name) {
@@ -20,6 +21,7 @@ export default function Tap(props) {
       liters = 0;
       percentage = 0;
       figcaptionText = props.name;
+      beerNameWithoutSpaces = props.name.replaceAll(" ", "").toLowerCase();
     } else if (props.id) {
       tapNumber = props.id + 1;
       //we are assuming each liter is 100 since there is no indicator for the meassurements
@@ -29,6 +31,7 @@ export default function Tap(props) {
       //Here we calculate how tall to make the tap fullness indicator
       percentage = Math.round((props.level / props.capacity) * 100);
       figcaptionText = props.beer;
+      beerNameWithoutSpaces = props.beer.replaceAll(" ", "").toLowerCase();
     } else if (props.id === 0) {
       //I made this extra "else if" because id 0 was showing as false - it's the same as the previous
       tapNumber = props.id + 1;
@@ -36,6 +39,7 @@ export default function Tap(props) {
       kegs = findArrayElementByName(props.storage, props.beer);
       percentage = Math.round((props.level / props.capacity) * 100);
       figcaptionText = props.beer;
+      beerNameWithoutSpaces = props.beer.replaceAll(" ", "").toLowerCase();
     }
 
     const barHeight = (5.9 / 100) * percentage;
@@ -49,12 +53,14 @@ export default function Tap(props) {
       });
     }
 
+    const imageSource = `src/img/labels/${beerNameWithoutSpaces}.png`;
+
     return (
       <article className="tap_article">
         <h3 style={{ display: !props.beer ? "none" : "block" }}>Tap {tapNumber}</h3>
         <div className="tap_visuals">
           <figure>
-            <img src="#" alt="Beer" />
+            <img src={imageSource} alt="Beer" />
             <figcaption>{figcaptionText}</figcaption>
           </figure>
           <div className="tap_bar">
