@@ -14,14 +14,23 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .tap {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
+  .queue {
+    padding-top: 5rem;
   }
+
+  // .tap {
+  //   display: flex;
+  //   flex-flow: wrap;
+  //   justify-content: center;
+  // }
 
   .tap h2 {
     flex: 0 0 100%;
+  }
+
+  .on_tap,
+  .off_tap {
+    grid-template-columns: repeat(6, 1fr);
   }
 
   .filter_container {
@@ -38,7 +47,13 @@
   }
 
   .col {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+
+  .col article {
+    padding: 1rem;
+    margin: 1rem;
   }
 }
 
@@ -51,6 +66,10 @@
   .queue_container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .queue {
+    padding-top: 3rem;
   }
 
   .queue_article {
@@ -76,6 +95,15 @@
 
   .tap h2 {
     display: none;
+  }
+
+  .tap h4 {
+    display: none;
+  }
+
+  .on_tap,
+  .off_tap {
+    display: flex;
   }
 
   .colleagues h2 {

@@ -26,11 +26,11 @@ export default function TapStatus(props) {
     <section className="tap">
       <h2>Tap Status</h2>
       <section className="on_tap">{mappedOnTap}</section>
-      <section className="off_tap">
-        <h4>
-          Temporary title <br></br> not on tap
-        </h4>
+      <section>
+        <h4> Not on Tap </h4>
+        <div className="off_tap">
         {mappedNotOnTap}
+        </div>
       </section>
     </section>
   );

@@ -22,7 +22,7 @@ export default function BeersForOpenOrders(props) {
         <div className="line_it_up">
           <p>Amount</p>
           <div className="line1"></div>
-          <p>{props.beer.amount}</p>
+          <p>X{props.beer.amount}</p>
         </div>
         <div className="line_it_up">
           <p>Tap</p>
