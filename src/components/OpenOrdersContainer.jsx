@@ -5,5 +5,5 @@ import OpenOrder from "./OpenOrder";
 export default function OpenOrdersContainer(props) {
   const mapped = props.serving.map((order) => <OpenOrder bartenders={props.bartenders} beers={props.beers} taps={props.taps} {...order} key={order.id} />);
 
-  return <section>{mapped}</section>;
+  return <section className="open_order_container">{mapped}</section>;
 }
