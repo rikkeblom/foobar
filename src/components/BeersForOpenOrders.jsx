@@ -11,10 +11,12 @@ export default function BeersForOpenOrders(props) {
     });
   }
   let tapNumber = tap.id + 1;
+  const beerNameWithoutSpaces = props.beer.beer.replaceAll(" ", "").toLowerCase();
+  const imageSource = `src/img/labels/${beerNameWithoutSpaces}.png`;
 
   return (
     <article className="lable_article">
-      <img src="#" alt="BeerLabel" />
+      <img src={imageSource} alt="BeerLabel" />
       <div>
         <h4>{props.beer.beer}</h4>
         <div className="line_it_up">
