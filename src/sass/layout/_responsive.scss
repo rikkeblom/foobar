@@ -2,11 +2,11 @@
   .open_order_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
   }
 
   .served_article {
     display: block;
-    padding-left: 1rem;
   }
 
   .served_queue_container {
