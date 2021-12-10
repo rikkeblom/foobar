@@ -2,6 +2,9 @@ import FilterAndSearchColleagues from "./FilterAndSearchColleagues";
 import Colleague from "./colleague";
 
 export default function ColleaguesSection(props) {
+  //import the new bartender array here
+  //concat the bartender array from props with our fake bartender array
+  //use new concat array for mapping
   const mapped = props.bartenders.map((bartender) => <Colleague {...bartender} key={bartender.name} />);
 
   // const [employees, setEmployees] = useState([]);
