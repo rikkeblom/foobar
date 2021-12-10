@@ -10,7 +10,6 @@ async function fetchDataBeers() {
   const resBeer = await fetch("https://foobar-databar.herokuapp.com/beertypes");
   const dataBeer = await resBeer.json();
   beerData = dataBeer;
-  // console.log(beerData);
 }
 fetchDataBeers();
 

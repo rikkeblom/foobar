@@ -1,3 +1,5 @@
+import { shifts } from "../settings";
+
 export default function Colleague(props) {
   let task;
   if (props.statusDetail === "pourBeer") {
@@ -21,7 +23,7 @@ export default function Colleague(props) {
       <img src="#" alt="Employee" />
       <div>
         <h4>{props.name}</h4>
-        <p>Shift: 00:00</p>
+        <p>Shift: {shifts[props.name]}</p>
         <p>
           {props.status}: {task}
         </p>
