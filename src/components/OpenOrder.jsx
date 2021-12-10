@@ -37,11 +37,12 @@ export default function OpenOrder(props) {
     }
     //Now we can use the map on the new array and send the beername + amount to the next component
     const mapped = beerArray.map((beer) => <BeersForOpenOrders beer={beer} taps={props.taps} key={beer.beer} />);
+    const tableNumber = (props.id % 12) + 1;
 
     return (
       <article className="served_article">
         <button className="table_button">
-          <h3>Table #</h3>
+          <h3>Table {tableNumber}</h3>
           <span>V</span>
         </button>
         <section>
