@@ -4,6 +4,7 @@ import Main from "./components/Main";
 import Aside from "./components/Aside";
 import "./style.scss";
 import ClockLoader from "react-spinners/ClockLoader";
+//https://www.npmjs.com/package/react-spinners
 
 //Here I fetch data about the beer *ONCE*
 let beerData;
