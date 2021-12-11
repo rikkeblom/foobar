@@ -3,7 +3,7 @@ import BeersForQueuedOrders from "./BeersForQueuedOrders";
 //props receives beers, taps, id, order and startTime
 export default function QueueOrder(props) {
   let beerArray = [];
-  props.order.forEach(addToArray);
+  props.order.map(addToArray);
   function addToArray(beername) {
     if (beerArray.find((element) => element.beer === beername)) {
       let arrayIndex = beerArray.findIndex((element) => element.beer === beername);

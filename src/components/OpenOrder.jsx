@@ -24,7 +24,7 @@ export default function OpenOrder(props) {
     // We do that by making a new array and then checking for each beer in the order if there already is a beer of that type.
     // If there isn't, we add it to the array and set the amount to 1. If there is, we find the index of it and increment the amount by one.
     let beerArray = [];
-    props.order.forEach(addToArray);
+    props.order.map(addToArray);
     function addToArray(beername) {
       if (beerArray.find((element) => element.beer === beername)) {
         let arrayIndex = beerArray.findIndex((element) => element.beer === beername);

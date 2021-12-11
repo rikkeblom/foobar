@@ -13,7 +13,7 @@ export default function TapStatus(props) {
   //next let's find the beers that are not on tap.
   //we loop through the full list of beers (10) checking each one if it is in the tap array - else we add it to a new array - we should end up having 3 elements in the array
   let beersNotOnTapArray = [];
-  props.beers.forEach(addToArray);
+  props.beers.map(addToArray);
   function addToArray(beerFromFullList) {
     if (props.taps.find((element) => element.beer === beerFromFullList.name)) {
     } else if (props.taps.find((element) => element.beer !== beerFromFullList.name)) {
@@ -28,9 +28,7 @@ export default function TapStatus(props) {
       <section className="on_tap">{mappedOnTap}</section>
       <section>
         <h4> Not on Tap </h4>
-        <div className="off_tap">
-        {mappedNotOnTap}
-        </div>
+        <div className="off_tap">{mappedNotOnTap}</div>
       </section>
     </section>
   );
