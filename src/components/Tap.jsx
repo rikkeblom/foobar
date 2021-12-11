@@ -59,26 +59,28 @@ export default function Tap(props) {
     return (
       <article className="tap_article">
         <h3 style={{ display: !props.beer ? "none" : "block" }}>Tap {tapNumber}</h3>
-        <div className="beer_on_tap">
-          <div className="tap_visuals">
-            <figure>
-              <img src={imageSource} alt={altText} />
-              <figcaption>{figcaptionText}</figcaption>
-            </figure>
-          </div>
-          <div>
-            <div className="line_it_up">
-              <p>Tap</p>
-              <p className="tap_amount">{liters} L</p>
+        <div style={{ display: "flex", width: "max-content" }}>
+          <div className="beer_on_tap">
+            <div className="tap_visuals">
+              <figure>
+                <img src={imageSource} alt={altText} />
+                <figcaption>{figcaptionText}</figcaption>
+              </figure>
             </div>
-            <div className="line_it_up">
-              <p>Kegs</p>
-              <p className="keg_amount">{kegs.amount}</p>
+            <div>
+              <div className="line_it_up">
+                <p>Tap</p>
+                <p className="tap_amount">{liters} L</p>
+              </div>
+              <div className="line_it_up">
+                <p>Kegs</p>
+                <p className="keg_amount">{kegs.amount}</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="tap_bar">
-          <div className="tap_bar_status" style={{ clipPath: `inset(${percentage}% 0% 0% 0% round 10px)` }}></div>
+          <div className="tap_bar">
+            <div className="tap_bar_status" style={{ clipPath: `inset(${percentage}% 0% 0% 0% round 10px)` }}></div>
+          </div>
         </div>
       </article>
     );

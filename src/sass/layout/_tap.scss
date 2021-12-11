@@ -10,16 +10,16 @@
 }
 
 .tap_article {
-  display: flex;
-  flex-flow: wrap;
+  // display: flex;
+  // flex-flow: wrap;
   padding: 1rem;
-  justify-content: center;
+  // justify-content: center;
 }
 
 .tap h3 {
   flex: 0 0 100%;
   margin-bottom: 0.5rem;
-  margin-left: 1.6rem;
+  // margin-left: 1.6rem;
 }
 .tap h4 {
   flex: 0 0 100%;
@@ -63,12 +63,7 @@
   width: 0.9rem;
   height: 9.9rem;
   background-color: rgb(255, 251, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(255, 0, 0, 1) 0%,
-    rgba(241, 255, 0, 1) 50%,
-    rgba(60, 253, 45, 1) 100%
-  );
+  background: linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgba(241, 255, 0, 1) 50%, rgba(60, 253, 45, 1) 100%);
   border: 1px solid colors.$cream;
   border-radius: 1rem;
   position: absolute;
@@ -78,5 +73,6 @@
 .on_tap,
 .off_tap {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  // grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
 }
