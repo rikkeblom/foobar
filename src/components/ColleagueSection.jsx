@@ -1,5 +1,5 @@
 import FilterAndSearchColleagues from "./FilterAndSearchColleagues";
-import Colleague from "./colleague";
+import Colleague from "./Colleague";
 
 export default function ColleaguesSection(props) {
   //import the new bartender array here
