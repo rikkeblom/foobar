@@ -31,12 +31,18 @@
 .queue_table {
   background-image: colors.$green-gradient;
   width: 18rem;
+  height: 2.5rem;
   display: flex;
   text-align: center;
   justify-content: center;
   border: 1px solid colors.$cream;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   padding: 0.2rem;
+}
+
+.queue_tap p {
+  font-size: 2rem;
+  margin-right: 1rem;
 }
 
 .queue_table > * {
@@ -70,16 +76,21 @@
   justify-content: right;
 }
 
+.queue_tap img {
+  height: 2rem;
+  width: 2rem;
+}
+
 .beer_queue_article img {
   //border: 1px solid colors.$red;
   //box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   aspect-ratio: 1/1;
   margin-right: 0.8rem;
-  height: 4rem;
-  width: 4rem;
 }
 
 .queue_beer img {
   border: 1px solid colors.$red;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  height: 4rem;
+  width: 4rem;
 }
