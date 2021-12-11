@@ -13,6 +13,10 @@
   color: colors.$red;
 }
 
+h3 {
+  font-size: 1rem;
+}
+
 .queue h4 {
   color: colors.$red;
 }
@@ -25,7 +29,7 @@
 .queue_article {
   display: grid;
   justify-items: center;
-  margin: 1rem;
+  margin-bottom: 1rem;
 }
 
 .queue_table {
@@ -35,6 +39,7 @@
   display: flex;
   text-align: center;
   justify-content: center;
+  align-items: center;
   border: 1px solid colors.$cream;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   padding: 0.2rem;

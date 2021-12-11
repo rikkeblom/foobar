@@ -16,7 +16,7 @@ export default function ColleaguesSection(props) {
   // }
 
   return (
-    <section className="colleagues">
+    <section id="colleagueSection" className="colleagues">
       <h2>Colleagues</h2>
       <section className="filter_section">
         <input type="search" />
