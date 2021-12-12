@@ -80,8 +80,13 @@
 }
 
 .col {
-  display: grid;
+  margin: 1rem auto 2rem auto;
+  min-width: min-content;
+  max-width: max-content;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 1rem;
 }
 
 .col article {
