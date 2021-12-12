@@ -4,6 +4,7 @@ export default function Colleague(props) {
   let task;
   let color;
 
+  //I gave the colors variables so it was easier for me to give the filter buttons the right colors
   const lavender = "#afa2d9";
   const olive = "#7dc582";
   const sky = "#72d5e5";

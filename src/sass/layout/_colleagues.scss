@@ -34,6 +34,10 @@
   //margin: 1rem;
 }
 
+.colleagues input[type="checkbox"] {
+  display: none;
+}
+
 .filter_section {
   display: grid;
   justify-items: center;
@@ -51,11 +55,13 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   margin: 0.2rem;
   padding: 0.2rem;
+  width: 7rem;
+  text-align: center;
 }
 
 .filter2 {
-  display: flex;
-  //grid-template-columns: repeat(5, 1fr);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
 }
 
@@ -85,6 +91,10 @@
 
 .pool {
   background-color: colors.$pool;
+}
+
+.no_color {
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .col {
