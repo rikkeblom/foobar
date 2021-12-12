@@ -3,9 +3,15 @@ import Colleague from "./Colleague";
 
 export default function ColleaguesSection(props) {
   //import the new bartender array here
+  //const exstraColleagues = ['Stefan Rhóhelio', 'Simone Lovegood', 'Harald Cumberback', 'Nadia Steel']; 
+  
   //concat the bartender array from props with our fake bartender array
+
+  //const allColleagues = props.bartenders.concat(exstraColleagues);
+
   //use new concat array for mapping
   const mapped = props.bartenders.map((bartender) => <Colleague {...bartender} key={bartender.name} />);
+  //const mapped = allColleagues.map((bartender) => <Colleague {...bartender} key={bartender.name} />);
 
   // const [employees, setEmployees] = useState([]);
   // const [filter, setFilter] = useState("all"); //workingtoday, dayoff

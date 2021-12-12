@@ -20,25 +20,25 @@ export default function FilterAndSearchColleagues() {
         </label>
       </div>
       <div className="filter2">
-        <label htmlFor="waitingtables" className="lavender">
-          <input type="checkbox" id="waitingtables" name="waitingtables"></input>
+        <label htmlFor="pourBeer" className="lavender">
+          <input type="checkbox" id="pourBeer" name="pourBeer"></input>
+          Pouring Beer
+        </label>
+        <label htmlFor="recievePayment" className="olive">
+          <input type="checkbox" id="recievePayment" name="recievePayment"></input>
+          Receiving Payment
+        </label>
+        <label htmlFor="replaceKeg" className="sky">
+          <input type="checkbox" id="replaceKeg" name="replaceKeg"></input>
+          Replacing Keg
+        </label>
+        <label htmlFor="waiting" className="mango">
+          <input type="checkbox" id="waiting" name="waiting"></input>
           Waiting
         </label>
-        <label htmlFor="onbreak" className="olive">
-          <input type="checkbox" id="onbreak" name="onbreak"></input>
-          On Break
-        </label>
-        <label htmlFor="doinginventory" className="sky">
-          <input type="checkbox" id="doinginventory" name="doinginventory"></input>
-          Inventory
-        </label>
-        <label htmlFor="cleaning" className="mango">
-          <input type="checkbox" id="cleaning" name="cleaning"></input>
-          Cleaning
-        </label>
-        <label htmlFor="manager" className="white">
-          <input type="checkbox" id="manager" name="manager"></input>
-          Manager
+        <label htmlFor="startServing" className="white">
+          <input type="checkbox" id="startServing" name="startServing"></input>
+          Started Serving
         </label>
       </div>
     </section>
