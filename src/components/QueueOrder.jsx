@@ -1,8 +1,10 @@
 import BeersForQueuedOrders from "./BeersForQueuedOrders";
+import { useState } from "react";
 
 //props receives beers, taps, id, order and startTime
 export default function QueueOrder(props) {
   let beerArray = [];
+  const [state, setState] = useState(true);
   props.order.map(addToArray);
   function addToArray(beername) {
     if (beerArray.find((element) => element.beer === beername)) {
@@ -21,12 +23,21 @@ export default function QueueOrder(props) {
 
   return (
     <article className="queue_article">
-      <div className="queue_table">
+      <div
+        className="queue_table"
+        onClick={() => {
+          if (state) {
+            setState(false);
+          } else {
+            setState(true);
+          }
+        }}
+      >
         <button>Open Order</button>
         <h3>Table {tableNumber}</h3>
         <span>Timer</span>
       </div>
-      <section>{mapped}</section>
+      <section style={{ display: state ? "block" : "none" }}>{mapped}</section>
     </article>
   );
 }

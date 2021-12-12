@@ -1,4 +1,5 @@
 import BeersForOpenOrders from "./BeersForOpenOrders";
+import { useState } from "react";
 
 //props gets bartenders, beers and taps
 export default function OpenOrder(props) {
@@ -7,6 +8,7 @@ export default function OpenOrder(props) {
     return null;
   } else {
     let server = findArrayElementByID(props.bartenders, props.id);
+    const [state, setState] = useState(true);
 
     function findArrayElementByID(array, id) {
       return array.find((bartender) => {
@@ -41,11 +43,20 @@ export default function OpenOrder(props) {
 
     return (
       <article className="served_article">
-        <button className="table_button">
+        <button
+          className="table_button"
+          onClick={() => {
+            if (state) {
+              setState(false);
+            } else {
+              setState(true);
+            }
+          }}
+        >
           <h3>Table {tableNumber}</h3>
           <span>V</span>
         </button>
-        <section>
+        <section style={{ display: state ? "block" : "none" }}>
           <p className="server_name">Being served by {server.name}</p>
           {mapped}
         </section>
