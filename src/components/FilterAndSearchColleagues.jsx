@@ -32,14 +32,23 @@ export default function FilterAndSearchColleagues() {
           <input type="checkbox" id="replaceKeg" name="replaceKeg"></input>
           Replacing Keg
         </label>
-        <label htmlFor="waiting" className="mango">
+        <label htmlFor="releaseTap" className="mango">
+          <input type="checkbox" id="releaseTap" name="releaseTap"></input>
+          Releasing Tap
+        </label>
+        <label htmlFor="waiting" className="white">
           <input type="checkbox" id="waiting" name="waiting"></input>
           Waiting
         </label>
-        <label htmlFor="startServing" className="white">
+        <label htmlFor="startServing" className="pink">
           <input type="checkbox" id="startServing" name="startServing"></input>
           Started Serving
         </label>
+        <label htmlFor="reserveTap" className="pool">
+          <input type="checkbox" id="reserveTap" name="reserveTap"></input>
+          Reserving Tap
+        </label>
+        
       </div>
     </section>
   );
