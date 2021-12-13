@@ -28,6 +28,8 @@ export default function ColleaguesSection(props) {
   // if (filter !== "all") {
   //   filteredEmployees = employees.filter((empl) => empl.statusDetail === filter);
   // }
+  
+  
   function selectFilter(event) {
     const filter = event.target.dataset.field;
     filterList(filter);
@@ -98,13 +100,23 @@ export default function ColleaguesSection(props) {
     return bartender.statusDetail === " ";
   }
 
+  function searchImput(evt) {
+    // filteredList(
+    //   props.bartenders.filter((props) => {
+    //     return (
+    //       props.name
+    //     );
+    //   })
+    // );
+  }
+
   const mapped = filteredList.map((bartender) => <Colleague {...bartender} key={bartender.name} />);
 
   return (
     <section className="colleagues">
       <h2>Colleagues</h2>
       <section className="filter_section">
-        <input type="search" />
+        <input type="search" onClick={searchImput}/>
         <div className="filter1">
           <label htmlFor="workingtoday">
             <input type="checkbox" id="workingtoday" name="workingtoday" onClick={selectFilter} data-action="filter" data-field="workingtoday"></input>
@@ -114,10 +126,10 @@ export default function ColleaguesSection(props) {
             <input type="checkbox" id="dayoff" name="dayoff" onClick={selectFilter} data-action="filter" data-field="dayoff"></input>
             Day Off
           </label>
-          <label htmlFor="az">
+          {/* <label htmlFor="az">
             <input type="checkbox" id="az" name="az"></input>
             A-Z
-          </label>
+          </label> */}
         </div>
         <div className="filter2">
         <label htmlFor="all" className="no_color">
