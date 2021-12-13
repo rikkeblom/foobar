@@ -1,7 +1,10 @@
 import FilterAndSearchColleagues from "./FilterAndSearchColleagues";
 import Colleague from "./Colleague";
 
+
+
 export default function ColleaguesSection(props) {
+  const statusDetail = props.statusDetail;
   //import the new bartender array here
   //const exstraColleagues = ['Stefan Rhóhelio', 'Simone Lovegood', 'Harald Cumberback', 'Nadia Steel']; 
   
@@ -20,6 +23,25 @@ export default function ColleaguesSection(props) {
   // if (filter !== "all") {
   //   filteredEmployees = employees.filter((empl) => empl.statusDetail === filter);
   // }
+  function selectFilter(event) {
+    const filter = event.target.dataset.field;
+    filterList(filter);
+  }
+
+  function filterList(filterBy) {
+    let filteredList = props.bartenders;
+    //console.log(filteredList);
+
+    if (filterBy === "pourBeer") {
+      filteredList = filteredList.filter(isPourBeer);
+    }
+    
+  }
+
+  function isPourBeer(bartender){
+    console.log(bartender.statusDetail);
+    return bartender.statusDetail === "pourBeer";
+  }
 
   return (
     <section className="colleagues">
@@ -28,11 +50,11 @@ export default function ColleaguesSection(props) {
         <input type="search" />
         <div className="filter1">
           <label htmlFor="workingtoday">
-            <input type="checkbox" id="workingtoday" name="workingtoday"></input>
+            <input type="checkbox" id="workingtoday" name="workingtoday" onClick={selectFilter} data-action="filter" data-field="workingtoday"></input>
             Working Today
           </label>
           <label htmlFor="dayoff">
-            <input type="checkbox" id="dayoff" name="dayoff"></input>
+            <input type="checkbox" id="dayoff" name="dayoff" onClick={selectFilter} data-action="filter" data-field="dayoff"></input>
             Day Off
           </label>
           <label htmlFor="az">
@@ -41,36 +63,36 @@ export default function ColleaguesSection(props) {
           </label>
         </div>
         <div className="filter2">
-        <label htmlFor="all" className="">
-          <input type="checkbox" id="pourBeer" name="all"></input>
+        <label htmlFor="all" className="no_color">
+          <input type="checkbox" id="all" name="all" onClick={selectFilter} data-action="filter" data-field="*"></input>
           All
         </label>
         <label htmlFor="pourBeer" className="lavender">
-          <input type="checkbox" id="pourBeer" name="pourBeer"></input>
+          <input type="checkbox" id="pourBeer" name="pourBeer" onClick={selectFilter} data-action="filter" data-field="pourBeer"></input>
           Pouring Beer
         </label>
         <label htmlFor="recievePayment" className="olive">
-          <input type="checkbox" id="recievePayment" name="recievePayment"></input>
+          <input type="checkbox" id="recievePayment" name="recievePayment" onClick={selectFilter} data-action="filter" data-field="recievePayment"></input>
           Receiving Payment
         </label>
         <label htmlFor="replaceKeg" className="sky">
-          <input type="checkbox" id="replaceKeg" name="replaceKeg"></input>
+          <input type="checkbox" id="replaceKeg" name="replaceKeg" onClick={selectFilter} data-action="filter" data-field="replaceKeg"></input>
           Replacing Keg
         </label>
         <label htmlFor="releaseTap" className="mango">
-          <input type="checkbox" id="releaseTap" name="releaseTap"></input>
+          <input type="checkbox" id="releaseTap" name="releaseTap" onClick={selectFilter} data-action="filter" data-field="releaseTap"></input>
           Releasing Tap
         </label>
         <label htmlFor="waiting" className="white">
-          <input type="checkbox" id="waiting" name="waiting"></input>
+          <input type="checkbox" id="waiting" name="waiting" onClick={selectFilter} data-action="filter" data-field="waiting"></input>
           Waiting
         </label>
         <label htmlFor="startServing" className="pink">
-          <input type="checkbox" id="startServing" name="startServing"></input>
+          <input type="checkbox" id="startServing" name="startServing" onClick={selectFilter} data-action="filter" data-field="startServing"></input>
           Started Serving
         </label>
         <label htmlFor="reserveTap" className="pool">
-          <input type="checkbox" id="reserveTap" name="reserveTap"></input>
+          <input type="checkbox" id="reserveTap" name="reserveTap" onClick={selectFilter} data-action="filter" data-field="reserveTap"></input>
           Reserving Tap
         </label>
         </div>
