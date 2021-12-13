@@ -1,10 +1,15 @@
 import FilterAndSearchColleagues from "./FilterAndSearchColleagues";
 import Colleague from "./Colleague";
+import { useState } from "react";
 
 
 
 export default function ColleaguesSection(props) {
   const statusDetail = props.statusDetail;
+
+  //let filteredList = props.bartenders;
+  const [filteredList, setFilteredList] = useState(props.bartenders);
+
   //import the new bartender array here
   //const exstraColleagues = ['Stefan Rhóhelio', 'Simone Lovegood', 'Harald Cumberback', 'Nadia Steel']; 
   
@@ -13,7 +18,7 @@ export default function ColleaguesSection(props) {
   //const allColleagues = props.bartenders.concat(exstraColleagues);
 
   //use new concat array for mapping
-  const mapped = props.bartenders.map((bartender) => <Colleague {...bartender} key={bartender.name} />);
+  //const mapped = props.bartenders.map((bartender) => <Colleague {...bartender} key={bartender.name} />);
   //const mapped = allColleagues.map((bartender) => <Colleague {...bartender} key={bartender.name} />);
 
   // const [employees, setEmployees] = useState([]);
@@ -29,19 +34,26 @@ export default function ColleaguesSection(props) {
   }
 
   function filterList(filterBy) {
-    let filteredList = props.bartenders;
+   let newFilteredList = props.bartenders;
+
     //console.log(filteredList);
 
     if (filterBy === "pourBeer") {
-      filteredList = filteredList.filter(isPourBeer);
+      newFilteredList = newFilteredList.filter(isPourBeer);
+      console.log(newFilteredList);
     }
+
+    setFilteredList(newFilteredList);
     
   }
 
   function isPourBeer(bartender){
-    console.log(bartender.statusDetail);
+    //console.log(bartender.statusDetail);
     return bartender.statusDetail === "pourBeer";
+
   }
+
+  const mapped = filteredList.map((bartender) => <Colleague {...bartender} key={bartender.name} />);
 
   return (
     <section className="colleagues">
