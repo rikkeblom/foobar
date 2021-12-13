@@ -2,7 +2,7 @@
 
 .tap {
   background: colors.$green-gradient;
-  padding: 1rem;
+  padding: 3rem 1rem;
 }
 
 .tap h2 {
@@ -10,20 +10,20 @@
 }
 
 .tap_article {
-  display: flex;
-  flex-flow: wrap;
+  // display: flex;
+  // flex-flow: wrap;
   padding: 1rem;
-  justify-content: center;
+  // justify-content: center;
 }
 
 .tap h3 {
   flex: 0 0 100%;
   margin-bottom: 0.5rem;
-  margin-left: 1.6rem;
+  // margin-left: 1.6rem;
 }
 .tap h4 {
   flex: 0 0 100%;
-  margin: 3rem;
+  margin: 3rem 0 1rem 0;
   text-align: center;
 }
 .tap_visuals {
@@ -63,20 +63,23 @@
   width: 0.9rem;
   height: 9.9rem;
   background-color: rgb(255, 251, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(255, 0, 0, 1) 0%,
-    rgba(241, 255, 0, 1) 50%,
-    rgba(60, 253, 45, 1) 100%
-  );
+  background: linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgba(241, 255, 0, 1) 50%, rgba(60, 253, 45, 1) 100%);
   border: 1px solid colors.$cream;
   border-radius: 1rem;
   position: absolute;
   clip-path: inset(0% 0% 0% 0% round 10px);
 }
 
-.on_tap,
-.off_tap {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.tap_article {
+  margin: 0 auto;
+}
+
+.off_tap,
+.on_tap {
+  margin: 0 auto;
+  min-width: min-content;
+  max-width: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }

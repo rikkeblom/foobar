@@ -23,7 +23,7 @@ export default function TapStatus(props) {
   const mappedNotOnTap = beersNotOnTapArray.map((beer) => <Tap taps={props.taps} storage={props.storage} {...beer} key={beer.name} />);
 
   return (
-    <section className="tap">
+    <section id="tapStatus" className="tap">
       <h2>Tap Status</h2>
       <section className="on_tap">{mappedOnTap}</section>
       <section>
