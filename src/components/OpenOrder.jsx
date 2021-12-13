@@ -46,7 +46,7 @@ export default function OpenOrder(props) {
           <span>V</span>
         </button>
         <section>
-          <p className="server_name">Being served by {server.name}</p>
+          {/* <p className="server_name">Being served by {server.name}</p> */}
           {mapped}
         </section>
       </article>

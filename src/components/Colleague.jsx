@@ -21,10 +21,10 @@ export default function Colleague(props) {
     color = olive;
   } else if (props.statusDetail === "replaceKeg") {
     task = "Replacing Keg";
-    color = "#72d5e5";
+    color = sky;
   } else if (props.statusDetail === "releaseTap") {
     task = "Releasing Tap";
-    color = "#ebc468";
+    color = mango;
   } else if (props.statusDetail === "waiting") {
     task = "Waiting";
     color = white;

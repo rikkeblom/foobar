@@ -36,11 +36,27 @@ export default function ColleaguesSection(props) {
   function filterList(filterBy) {
    let newFilteredList = props.bartenders;
 
-    //console.log(filteredList);
-
     if (filterBy === "pourBeer") {
       newFilteredList = newFilteredList.filter(isPourBeer);
-      console.log(newFilteredList);
+    } else if (filterBy === "recievePayment") {
+      newFilteredList = newFilteredList.filter(isrecievePayment);
+    } else if (filterBy === "replaceKeg") {
+      newFilteredList = newFilteredList.filter(isreplaceKeg);
+    } else if (filterBy === "releaseTap") {
+      newFilteredList = newFilteredList.filter(isreleaseTap);
+    } else if (filterBy === "waiting") {
+      newFilteredList = newFilteredList.filter(iswaiting);
+    } else if (filterBy === "startServing") {
+      newFilteredList = newFilteredList.filter(isstartServing);
+    } else if (filterBy === "reserveTap") {
+      newFilteredList = newFilteredList.filter(isreserveTap);
+    } else if (filterBy === "workingtoday") {
+      newFilteredList = newFilteredList.filter(isworkingtoday);
+    } else if (filterBy === "*") {
+      newFilteredList = newFilteredList.filter(all);
+    }
+    else if (filterBy === "dayoff") {
+      newFilteredList = newFilteredList.filter(isdayoff);
     }
 
     setFilteredList(newFilteredList);
@@ -48,9 +64,38 @@ export default function ColleaguesSection(props) {
   }
 
   function isPourBeer(bartender){
-    //console.log(bartender.statusDetail);
     return bartender.statusDetail === "pourBeer";
 
+  }
+  function isrecievePayment(bartender){
+    return bartender.statusDetail === "recievePayment";
+  }
+  function isreplaceKeg(bartender){
+    return bartender.statusDetail === "replaceKeg";
+  }
+  function isreleaseTap(bartender){
+    return bartender.statusDetail === "releaseTap";
+  }
+  function iswaiting(bartender){
+    return bartender.statusDetail === "waiting";
+  }
+  function isstartServing(bartender){
+    return bartender.statusDetail === "startServing";
+  }
+  function isreserveTap(bartender){
+    return bartender.statusDetail === "reserveTap";
+  }
+
+  function isworkingtoday(bartender){
+    return bartender.statusDetail === "pourBeer", "recievePayment", "replaceKeg", "releaseTap", "waiting", "startServing", "reserveTap";
+  }
+
+  function all(){
+    return props.bartenders;
+  }
+  
+  function isdayoff(bartender){
+    return bartender.statusDetail === " ";
   }
 
   const mapped = filteredList.map((bartender) => <Colleague {...bartender} key={bartender.name} />);

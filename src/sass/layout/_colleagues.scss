@@ -60,9 +60,12 @@
 }
 
 .filter2 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
+  // display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
 }
 
 .lavender {
