@@ -3,6 +3,8 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import Aside from "./components/Aside";
 import "./style.scss";
+import ClockLoader from "react-spinners/ClockLoader";
+//https://www.npmjs.com/package/react-spinners
 
 //Here I fetch data about the beer *ONCE*
 let beerData;
@@ -18,6 +20,7 @@ function App() {
   //I also use an interval to make it fetch and refresh the data every 2 seconds
   //I got help for the interval here: https://upmostly.com/tutorials/setinterval-in-react-components-using-hooks
   const [fetchedData, fetchNewData] = useState([]);
+  let [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -33,9 +36,22 @@ function App() {
     fetchNewData(data);
   }
 
+  const override = {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "100vh",
+    width: "100vw",
+    backgroundColor: "#f0e5c6",
+  };
+
   if (!fetchedData.bar) {
     //put maybe spinner loading thing here
-    return null;
+    return (
+      <div style={override}>
+        <ClockLoader loading={loading} size={150} />
+      </div>
+    );
   } else {
     //Here is where the "HTML" begins
     return (
