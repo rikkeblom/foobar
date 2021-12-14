@@ -1,25 +1,30 @@
+import beingServedIconURL from "/img/icons/serving_icon.svg";
+import inQueueIconURL from "/img/icons/queue_icon.svg";
+import tapStatusIconURL from "/img/icons/tap_icon.svg";
+import colleagueIconURL from "/img/icons/humans_icon.svg";
+
 export default function Navigation() {
   return (
     <nav>
       <ul>
         <li>
           <a href="#beingServed">
-            <img src="/img/icons/serving_icon.svg" alt="icon" />
+            <img src={beingServedIconURL} alt="icon" />
           </a>
         </li>
         <li>
           <a href="#inQueue">
-            <img src="/img/icons/queue_icon.svg" alt="icon" />
+            <img src={inQueueIconURL} alt="icon" />
           </a>
         </li>
         <li>
           <a href="#tapStatus">
-            <img src="/img/icons/tap_icon.svg" alt="icon" />
+            <img src={tapStatusIconURL} alt="icon" />
           </a>
         </li>
         <li>
           <a href="#colleagueSection">
-            <img src="/img/icons/humans_icon.svg" alt="icon" />
+            <img src={colleagueIconURL} alt="icon" />
           </a>
         </li>
       </ul>
