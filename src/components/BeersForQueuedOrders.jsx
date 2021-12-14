@@ -8,6 +8,7 @@ import row26LabelURL from "/img/labels/row26.png";
 import ruinedchildhoodLabelURL from "/img/labels/ruinedchildhood.png";
 import sleighrideLabelURL from "/img/labels/sleighride.png";
 import steampunkLabelURL from "/img/labels/steampunk.png";
+import redTapIconURL from "/img/icons/red_tap.png";
 
 //props receives beer(.amount & .beer) og taps
 
@@ -61,7 +62,7 @@ export default function BeersForQueuedOrders(props) {
         </div>
       </div>
       <div className="queue_tap">
-        <img src="/img/icons/red_tap.png" alt="Tap" />
+        <img src={redTapIconURL} alt="Tap" />
         <p>{tapNumber}</p>
       </div>
     </article>
