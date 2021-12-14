@@ -16,11 +16,12 @@ async function fetchDataBeers() {
 fetchDataBeers();
 
 function App() {
+  let [loading, setLoading] = useState(true);
+
   //useState to have data that will update the connected elements when it changes
   //I also use an interval to make it fetch and refresh the data every 2 seconds
   //I got help for the interval here: https://upmostly.com/tutorials/setinterval-in-react-components-using-hooks
   const [fetchedData, fetchNewData] = useState([]);
-  let [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -35,6 +36,8 @@ function App() {
     const data = await res.json();
     fetchNewData(data);
   }
+
+  fetchDataBar();
 
   const override = {
     display: "flex",

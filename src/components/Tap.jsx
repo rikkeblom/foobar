@@ -30,7 +30,7 @@ export default function Tap(props) {
       kegs = findArrayElementByName(props.storage, props.name);
       //since it is not on tap this will have 0 liters and 0%
       liters = 0;
-      percentage = 0;
+      percentage = 100;
       figcaptionText = props.name;
       beerNameWithoutSpaces = props.name.replaceAll(" ", "").toLowerCase();
     } else if (props.id) {
@@ -40,7 +40,7 @@ export default function Tap(props) {
       //Here we loop through the storage array to find the right beer so we know how many kegs are left in storage
       kegs = findArrayElementByName(props.storage, props.beer);
       //Here we calculate how tall to make the tap fullness indicator
-      percentage = Math.round((props.level / props.capacity) * 100);
+      percentage = 100 - Math.round((props.level / props.capacity) * 100);
       figcaptionText = props.beer;
       beerNameWithoutSpaces = props.beer.replaceAll(" ", "").toLowerCase();
     } else if (props.id === 0) {
@@ -48,7 +48,7 @@ export default function Tap(props) {
       tapNumber = props.id + 1;
       liters = props.level / 100;
       kegs = findArrayElementByName(props.storage, props.beer);
-      percentage = Math.round((props.level / props.capacity) * 100);
+      percentage = 100 - Math.round((props.level / props.capacity) * 100);
       figcaptionText = props.beer;
       beerNameWithoutSpaces = props.beer.replaceAll(" ", "").toLowerCase();
     }
