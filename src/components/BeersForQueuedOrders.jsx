@@ -14,7 +14,7 @@ export default function BeersForQueuedOrders(props) {
   }
   let tapNumber = tap.id + 1;
   const beerNameWithoutSpaces = props.beer.beer.replaceAll(" ", "").toLowerCase();
-  const imageSource = `./src/img/labels/${beerNameWithoutSpaces}.png`;
+  const imageSource = `/img/labels/${beerNameWithoutSpaces}.png`;
   const altText = `label for ${props.beer.beer}`;
 
   return (
@@ -27,7 +27,7 @@ export default function BeersForQueuedOrders(props) {
         </div>
       </div>
       <div className="queue_tap">
-        <img src="src/img/icons/red_tap.png" alt="Tap" />
+        <img src="/img/icons/red_tap.png" alt="Tap" />
         <p>{tapNumber}</p>
       </div>
     </article>

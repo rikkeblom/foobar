@@ -53,7 +53,7 @@ export default function Tap(props) {
       });
     }
 
-    const imageSource = `src/img/labels/${beerNameWithoutSpaces}.png`;
+    const imageSource = `/img/labels/${beerNameWithoutSpaces}.png`;
     const altText = `label for ${figcaptionText}`;
 
     return (
