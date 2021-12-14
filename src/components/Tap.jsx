@@ -1,3 +1,14 @@
+import elhefeLabelURL from "/img/labels/elhefe.png";
+import fairytalealeLabelURL from "/img/labels/fairytaleale.png";
+import githobLabelURL from "/img/labels/githop.png";
+import hollabacklagerLabelURL from "/img/labels/hollabacklager.png";
+import hoppilyeverafterLabelURL from "/img/labels/hoppilyeverafter.png";
+import mowintimeLabelURL from "/img/labels/mowintime.png";
+import row26LabelURL from "/img/labels/row26.png";
+import ruinedchildhoodLabelURL from "/img/labels/ruinedchildhood.png";
+import sleighrideLabelURL from "/img/labels/sleighride.png";
+import steampunkLabelURL from "/img/labels/steampunk.png";
+
 // TO DO/THOUGHTS:
 //    - Style the fullness bar so the colors fit better
 
@@ -53,8 +64,31 @@ export default function Tap(props) {
       });
     }
 
-    const imageSource = `/img/labels/${beerNameWithoutSpaces}.png`;
+    // const imageSource = `/img/labels/${beerNameWithoutSpaces}.png`;
     const altText = `label for ${figcaptionText}`;
+
+    let imageSource;
+    if (beerNameWithoutSpaces === "elhefe") {
+      imageSource = elhefeLabelURL;
+    } else if (beerNameWithoutSpaces === "fairytaleale") {
+      imageSource = fairytalealeLabelURL;
+    } else if (beerNameWithoutSpaces === "githop") {
+      imageSource = githobLabelURL;
+    } else if (beerNameWithoutSpaces === "hollabacklager") {
+      imageSource = hollabacklagerLabelURL;
+    } else if (beerNameWithoutSpaces === "hoppilyeverafter") {
+      imageSource = hoppilyeverafterLabelURL;
+    } else if (beerNameWithoutSpaces === "mowintime") {
+      imageSource = mowintimeLabelURL;
+    } else if (beerNameWithoutSpaces === "row26") {
+      imageSource = row26LabelURL;
+    } else if (beerNameWithoutSpaces === "ruinedchildhood") {
+      imageSource = ruinedchildhoodLabelURL;
+    } else if (beerNameWithoutSpaces === "sleighride") {
+      imageSource = sleighrideLabelURL;
+    } else if (beerNameWithoutSpaces === "steampunk") {
+      imageSource = steampunkLabelURL;
+    }
 
     return (
       <article className="tap_article">
