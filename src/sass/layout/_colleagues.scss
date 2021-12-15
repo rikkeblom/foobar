@@ -34,6 +34,10 @@
   //margin: 1rem;
 }
 
+.colleagues input[type="checkbox"] {
+  display: none;
+}
+
 .filter_section {
   display: grid;
   justify-items: center;
@@ -51,12 +55,17 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   margin: 0.2rem;
   padding: 0.2rem;
+  width: 7rem;
+  text-align: center;
 }
 
 .filter2 {
+  // display: grid;
+  // grid-template-columns: repeat(3, 1fr);
   display: flex;
-  //grid-template-columns: repeat(5, 1fr);
-  justify-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
 }
 
 .lavender {
@@ -79,6 +88,18 @@
   background-color: colors.$white;
 }
 
+.pink {
+  background-color: colors.$pink;
+}
+
+.pool {
+  background-color: colors.$pool;
+}
+
+.no_color {
+  background-color: rgba(0, 0, 0, 0);
+}
+
 .col {
   margin: 1rem auto 2rem auto;
   min-width: min-content;
@@ -92,7 +113,7 @@
 .col article {
   border: 1px solid colors.$red;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  background-color: colors.$lavender;
+  //background-color: colors.$lavender;
   margin: 1rem;
   padding: 1rem;
   display: flex;
