@@ -8,7 +8,7 @@ import row26LabelURL from "/img/labels/row26.webp";
 import ruinedchildhoodLabelURL from "/img/labels/ruinedchildhood.webp";
 import sleighrideLabelURL from "/img/labels/sleighride.webp";
 import steampunkLabelURL from "/img/labels/steampunk.webp";
-import redTapIconURL from "/img/icons/red_tap.png";
+import redTapIconURL from "/img/icons/red_tap.webp";
 
 //props receives beer(.amount & .beer) og taps
 
