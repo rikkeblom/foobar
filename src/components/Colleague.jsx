@@ -1,5 +1,10 @@
 import { shifts } from "../settings";
 
+import dannieURL from "/img/face/dannie.webp";
+import jonasURL from "/img/face/jonas.webp";
+import klausURL from "/img/face/klaus.webp";
+import peterURL from "/img/face/peter.webp";
+
 export default function Colleague(props) {
   let task;
   let color;
@@ -35,11 +40,22 @@ export default function Colleague(props) {
     task = "Reserving Tap";
     color = pool;
   } 
-  //need a color for the emloyees doing nothing
+
+  let face;
+  
+if (props.name === "Dannie") {
+  face = dannieURL;
+} else if (props.name === "Jonas") {
+  face = jonasURL;
+} else if (props.name === "Klaus") {
+  face = klausURL;
+}else if (props.name === "Peter") {
+  face = peterURL;
+}
 
   return (
     <article style={{backgroundColor: `${color}`}}>
-      <img src="#" alt="Employee" />
+      <img src={face} alt="Employee" />
       <div>
         <h4>{props.name}</h4>
         <p>Shift: {shifts[props.name]}</p>
