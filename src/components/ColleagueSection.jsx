@@ -208,15 +208,7 @@ export default function ColleaguesSection(props) {
     return bartender.statusDetail === " ";
   }
 
-  function searchImput(evt) {
-    // filteredList(
-    //   props.bartenders.filter((props) => {
-    //     return (
-    //       props.name
-    //     );
-    //   })
-    // );
-  }
+ 
 
   const mapped = filteredList.map((bartender) => <Colleague {...bartender} key={bartender.name} />);
 
@@ -225,7 +217,6 @@ export default function ColleaguesSection(props) {
     <section id="colleagueSection" className="colleagues">
       <h2>Colleagues</h2>
       <section className="filter_section">
-        <input type="search" onClick={searchImput}/>
         <div className="filter1">
           <label htmlFor="workingtoday" className="workingtodayclass">
             <input type="checkbox" id="workingtoday" name="workingtoday" onClick={selectFilter} data-action="filter" data-field="workingtoday"></input>
