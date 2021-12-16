@@ -66,37 +66,145 @@ export default function ColleaguesSection(props) {
   }
 
   function isPourBeer(bartender){
-    return bartender.statusDetail === "pourBeer";
+    document.querySelector(".workingtodayclass").classList.remove("selected_line");
+    document.querySelector(".dayoffclass").classList.remove("selected_line");
+    document.querySelector(".no_color").classList.remove("selected");
+    document.querySelector(".olive").classList.remove("selected");
+    document.querySelector(".sky").classList.remove("selected");
+    document.querySelector(".mango").classList.remove("selected");
+    document.querySelector(".white").classList.remove("selected");
+    document.querySelector(".pink").classList.remove("selected");
+    document.querySelector(".pool").classList.remove("selected");
 
+    document.querySelector(".lavender").classList.add("selected")
+    return bartender.statusDetail === "pourBeer";
   }
   function isrecievePayment(bartender){
+    document.querySelector(".workingtodayclass").classList.remove("selected_line");
+    document.querySelector(".dayoffclass").classList.remove("selected_line");
+    document.querySelector(".no_color").classList.remove("selected");
+    document.querySelector(".lavender").classList.remove("selected");
+    document.querySelector(".sky").classList.remove("selected");
+    document.querySelector(".mango").classList.remove("selected");
+    document.querySelector(".white").classList.remove("selected");
+    document.querySelector(".pink").classList.remove("selected");
+    document.querySelector(".pool").classList.remove("selected");
+
+    document.querySelector(".olive").classList.add("selected")
     return bartender.statusDetail === "recievePayment";
   }
   function isreplaceKeg(bartender){
+    document.querySelector(".workingtodayclass").classList.remove("selected_line");
+    document.querySelector(".dayoffclass").classList.remove("selected_line");
+    document.querySelector(".no_color").classList.remove("selected");
+    document.querySelector(".olive").classList.remove("selected");
+    document.querySelector(".lavender").classList.remove("selected");
+    document.querySelector(".mango").classList.remove("selected");
+    document.querySelector(".white").classList.remove("selected");
+    document.querySelector(".pink").classList.remove("selected");
+    document.querySelector(".pool").classList.remove("selected");
+
+    document.querySelector(".sky").classList.add("selected")
     return bartender.statusDetail === "replaceKeg";
   }
   function isreleaseTap(bartender){
+    document.querySelector(".workingtodayclass").classList.remove("selected_line");
+    document.querySelector(".dayoffclass").classList.remove("selected_line");
+    document.querySelector(".no_color").classList.remove("selected");
+    document.querySelector(".olive").classList.remove("selected");
+    document.querySelector(".sky").classList.remove("selected");
+    document.querySelector(".lavender").classList.remove("selected");
+    document.querySelector(".white").classList.remove("selected");
+    document.querySelector(".pink").classList.remove("selected");
+    document.querySelector(".pool").classList.remove("selected");
+
+    document.querySelector(".mango").classList.add("selected")
     return bartender.statusDetail === "releaseTap";
   }
   function iswaiting(bartender){
+    document.querySelector(".workingtodayclass").classList.remove("selected_line");
+    document.querySelector(".dayoffclass").classList.remove("selected_line");
+    document.querySelector(".no_color").classList.remove("selected");
+    document.querySelector(".olive").classList.remove("selected");
+    document.querySelector(".sky").classList.remove("selected");
+    document.querySelector(".mango").classList.remove("selected");
+    document.querySelector(".lavender").classList.remove("selected");
+    document.querySelector(".pink").classList.remove("selected");
+    document.querySelector(".pool").classList.remove("selected");
+
+    document.querySelector(".white").classList.add("selected")
     return bartender.statusDetail === "waiting";
   }
   function isstartServing(bartender){
+    document.querySelector(".workingtodayclass").classList.remove("selected_line");
+    document.querySelector(".dayoffclass").classList.remove("selected_line");
+    document.querySelector(".no_color").classList.remove("selected");
+    document.querySelector(".olive").classList.remove("selected");
+    document.querySelector(".sky").classList.remove("selected");
+    document.querySelector(".mango").classList.remove("selected");
+    document.querySelector(".white").classList.remove("selected");
+    document.querySelector(".lavender").classList.remove("selected");
+    document.querySelector(".pool").classList.remove("selected");
+
+    document.querySelector(".pink").classList.add("selected")
     return bartender.statusDetail === "startServing";
   }
   function isreserveTap(bartender){
+    document.querySelector(".workingtodayclass").classList.remove("selected_line");
+    document.querySelector(".dayoffclass").classList.remove("selected_line");
+    document.querySelector(".no_color").classList.remove("selected");
+    document.querySelector(".olive").classList.remove("selected");
+    document.querySelector(".sky").classList.remove("selected");
+    document.querySelector(".mango").classList.remove("selected");
+    document.querySelector(".white").classList.remove("selected");
+    document.querySelector(".pink").classList.remove("selected");
+    document.querySelector(".lavender").classList.remove("selected");
+
+    document.querySelector(".pool").classList.add("selected")
     return bartender.statusDetail === "reserveTap";
   }
 
   function isworkingtoday(bartender){
+    document.querySelector(".dayoffclass").classList.remove("selected_line");
+    document.querySelector(".pool").classList.remove("selected");
+    document.querySelector(".olive").classList.remove("selected");
+    document.querySelector(".sky").classList.remove("selected");
+    document.querySelector(".mango").classList.remove("selected");
+    document.querySelector(".white").classList.remove("selected");
+    document.querySelector(".pink").classList.remove("selected");
+    document.querySelector(".lavender").classList.remove("selected");
+    document.querySelector(".no_color").classList.remove("selected");
+
+    document.querySelector(".workingtodayclass").classList.add("selected_line");
     return bartender.statusDetail === "pourBeer", "recievePayment", "replaceKeg", "releaseTap", "waiting", "startServing", "reserveTap";
   }
 
   function all(){
+    document.querySelector(".workingtodayclass").classList.remove("selected_line");
+    document.querySelector(".dayoffclass").classList.remove("selected_line");
+    document.querySelector(".pool").classList.remove("selected");
+    document.querySelector(".olive").classList.remove("selected");
+    document.querySelector(".sky").classList.remove("selected");
+    document.querySelector(".mango").classList.remove("selected");
+    document.querySelector(".white").classList.remove("selected");
+    document.querySelector(".pink").classList.remove("selected");
+    document.querySelector(".lavender").classList.remove("selected");
+    document.querySelector(".no_color").classList.add("selected");
     return props.bartenders;
   }
   
   function isdayoff(bartender){
+    document.querySelector(".workingtodayclass").classList.remove("selected_line");
+    document.querySelector(".pool").classList.remove("selected");
+    document.querySelector(".olive").classList.remove("selected");
+    document.querySelector(".sky").classList.remove("selected");
+    document.querySelector(".mango").classList.remove("selected");
+    document.querySelector(".white").classList.remove("selected");
+    document.querySelector(".pink").classList.remove("selected");
+    document.querySelector(".lavender").classList.remove("selected");
+    document.querySelector(".no_color").classList.remove("selected");
+
+    document.querySelector(".dayoffclass").classList.add("selected_line");
     return bartender.statusDetail === " ";
   }
 
@@ -112,17 +220,18 @@ export default function ColleaguesSection(props) {
 
   const mapped = filteredList.map((bartender) => <Colleague {...bartender} key={bartender.name} />);
 
+
   return (
     <section id="colleagueSection" className="colleagues">
       <h2>Colleagues</h2>
       <section className="filter_section">
         <input type="search" onClick={searchImput}/>
         <div className="filter1">
-          <label htmlFor="workingtoday">
+          <label htmlFor="workingtoday" className="workingtodayclass">
             <input type="checkbox" id="workingtoday" name="workingtoday" onClick={selectFilter} data-action="filter" data-field="workingtoday"></input>
             Working Today
           </label>
-          <label htmlFor="dayoff">
+          <label htmlFor="dayoff" className="dayoffclass">
             <input type="checkbox" id="dayoff" name="dayoff" onClick={selectFilter} data-action="filter" data-field="dayoff"></input>
             Day Off
           </label>

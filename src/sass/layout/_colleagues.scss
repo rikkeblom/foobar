@@ -135,3 +135,11 @@
   //left: 29.5rem;
   margin-left: 13rem;
 }
+
+.selected {
+  box-shadow: 0px 0px 8px 2px colors.$red !important;
+}
+
+.selected_line {
+  text-decoration: underline;
+}
