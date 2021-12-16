@@ -32,12 +32,10 @@ function App() {
   }, []);
 
   async function fetchDataBar() {
-    const res = await fetch("https://foobar-databar.herokuapp.com/");
+    const res = await fetch("https://foobar-databar.herokuapp.com");
     const data = await res.json();
     fetchNewData(data);
   }
-
-  fetchDataBar();
 
   const override = {
     display: "flex",
