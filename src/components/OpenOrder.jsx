@@ -40,27 +40,28 @@ export default function OpenOrder(props) {
     //Now we can use the map on the new array and send the beername + amount to the next component
     const mapped = beerArray.map((beer) => <BeersForOpenOrders beer={beer} taps={props.taps} key={beer.beer} />);
     const tableNumber = (props.id % 12) + 1;
-
-    return (
-      <article className="served_article">
-        <button
-          className="table_button"
-          onClick={() => {
-            if (state) {
-              setState(false);
-            } else {
-              setState(true);
-            }
-          }}
-        >
-          <h3>Table {tableNumber}</h3>
-          <span>V</span>
-        </button>
-        <section style={{ display: state ? "block" : "none" }}>
-          <p className="server_name">Being served by {server.name}</p>
-          {mapped}
-        </section>
-      </article>
-    );
+    if (server.name) {
+      return (
+        <article className="served_article">
+          <button
+            className="table_button"
+            onClick={() => {
+              if (state) {
+                setState(false);
+              } else {
+                setState(true);
+              }
+            }}
+          >
+            <h3>Table {tableNumber}</h3>
+            <span>V</span>
+          </button>
+          <section style={{ display: state ? "block" : "none" }}>
+            <p className="server_name">Being served by {server.name}</p>
+            {mapped}
+          </section>
+        </article>
+      );
+    }
   }
 }
